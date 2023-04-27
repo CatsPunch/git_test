@@ -1,0 +1,545 @@
+﻿HOW DOES THE WEB WORK?
+
+
+* What is a network?
+Two or more computers (servers/nodes) that are connected to each other two send information or files.
+* What is the internet?
+The Internet is a vast network that connects computers all over the world. Through the Internet, people can share information and communicate from anywhere with an Internet connection
+* What is an IP address?
+An unique identifier number to each device connected to the network
+* What is a router?
+Its a device that connects different devices to the internet and with other devices as well
+* What is an ISP?
+An Internet Service Provider company.
+* What are packets and how are they used to transfer data?
+Data that you ask for thats hosted in another computer far away reaches you in “packets”, that’s it, the data divided into smaller pieces of data send to your pc in different ways and with and number so your pc can re arrange the data
+* What is a client?
+A client is devices we use to connect to the internet
+* What is a server?
+Servers are the devices that store the websites, apps, etc we want to access.
+* What is a web page?
+A web page is a single document that can be open by a Web Browsers, often called “pages”
+* What is a web server?
+A Web Server is a computer that hosts a Web site on the internet
+* What is a web browser?
+An application that’s capble of opening the files that construct a webpage/website.
+* What is a search engine?
+Its a website that lets you serach for other pages.
+* What is a DNS request?
+A DNS request it’s what your browser does when you type a web address and it needs to find the REAL address (the IP) to accsess, you it chekcs into the DNS registry to check for it.
+* What browser are you currently using?
+Google Chrome
+* In your own words, explain what happens when you run a search on google.com.
+When i run a search on google, my browser send a request to the google servers asking for whatever im looking for, then google sends back the data (a copy of the webpage im asking for) in small packages until it reaches my computer, my web browser handles and rearranges the packets to be able to show me the page.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GIT
+Introduction
+   * What kind of program is Git?
+Is an open source version control system to handle small or large projects. 
+   * What are the differences between Git and a text editor in terms of what they save and their record keeping?
+Git saves different versions of the whole project, not just the latest one, and not just one file.
+   * Does Git work at a local or remote level?
+Local and remote,  you have a remote repository and every dev has a copy of the repository on their local device.
+   * Does GitHub work at a local or remote level?
+Remote
+   * Why is Git useful for an individual developer?
+Because you can work and save anytime you finish adding any functionality and then keep working not caring about bugs or any stuff you may add later cause you can just revert to an old version of the project that you know is working just fine.
+   * Why are Git and GitHub useful for a team of developers?
+They make it easier for devs to work together and make changes to any file of the project they are working on.
+
+
+
+
+
+
+
+
+Commands
+      * What is the Git command used to get a full copy of an existing Git repository from GitHub?
+$ git clone <url> <where to clone>
+      * What is the Git command used to check the status of your files?
+$ git status
+      * What is the Git command used to track files with Git?
+$ git init
+$ git add
+$
+      * What is the Git command used to remove tracked files with Git?
+$ git reset
+      * What is the Git command used to commit files?
+$ git commit -m “comment”
+      * What is the Git command used to view your commit history?
+$ git log
+      * What is the Git command used to upload projects into GitHub?
+First we have to run the command 
+$ git add -A
+this will add all the files or modified files to the 
+Then we run the command
+$ git commit -m “comment”
+this would commit the files locally, to do add it to the remote we use to things:
+$ git pull origin master
+This will check if any changes had been made to the repository (by someone else) since the last time we checked, and if it did, it will update it. Then we can push the file:
+$git push origin master
+      * Explain the two-stage system that Git uses to save files.
+      * Explain what origin is in git push origin main.
+origin its just the name of our remote repository
+      * Explain what main is in git push origin main.
+and main is the branch we want to push to (formerly known as master)
+Cheatsheet
+This is a reference list of the most commonly used Git commands. (You might consider bookmarking this handy page.) Try to familiarize yourself with the commands so that you can eventually remember them all:
+         * Commands related to a remote repository:
+         * git clone git@github.com:USER-NAME/REPOSITORY-NAME.git or git clone https://github.com/user-name/repository-name.git
+         * git push origin main
+         * Commands related to workflow:
+         * git add .
+         * git commit -m "A message describing what you have done to make this snapshot different"
+         * Commands related to checking status or log history
+         * git status
+         * git log
+F.A.Q
+         * How do you create a new repository on GitHub?
+From github on the top right corner
+         * How do you copy a repository onto your local machine?
+git clone followed by the URL you copied in the last step. The full command should look similar to git clone git@github.com:USER-NAME/REPOSITORY-NAME.git.
+         * What is the default name of your remote connection?
+origin
+         * How do you check the status of your current repository?
+$ git status
+         * How do you add files to the staging area in git?
+$ git add <name of the file>
+         * How do you commit the files to the staging area and add a descriptive message?
+$ git commit -m “<comment goes here>”
+         * How do you push your changes to your repository on GitHub?
+git push origin main
+         * How do you look at the history of your previous commits?
+git log
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Front End
+Introduction
+            * Which language is responsible for the semantic structure of a document?
+HTML
+            * Which language can change the font, text-size, or background-color of an element?
+CSS
+            * Name a few behaviors that javascript can be responsible for on a website.
+Handling events such as clicking on an element, or hovering over it, working with any type of variables you need.
+            * What is the purpose of an opening tag and closing tag in an HTML element?
+To know when that section or element endes, for example, you can tell the browser where your parapgh starts and where it ends so you can work on each element instead of the whole document.
+            * What is the selector in a CSS rule set?
+This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, <p> elements). To style a different element, change the selector.
+               * Element selector: (sometimes called a tag or type selector), All HTML elements of the specified type.
+Used by:         p                p selects <p>
+               * ID Selector: used on specified unique ID given to an element,
+Used by:         #my-id         selects <p id="my-id">
+               * Class selector: The element(s) on the page with the specified class. Can be more than one.
+Used by:        .my-class                selects <p class="my-class">
+               * Attribute selector: Selects the lement(s) on the page with the specfied attribute.
+Used by:         img[src]        selects <img src="myimage.png"> but not <img>
+               * Pseudo-class selector: The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)
+Used by:        a:hover        selects <a>, but only when the mouse pointer is hovering over the link.
+                  * What is the declaration in a CSS ruleset?
+This is a single rule like color: red;. It specifies which of the element's properties you want to style.
+                  * What is the property and property value in a CSS ruleset?
+                     * Properties
+These are ways in which you can style an HTML element. In CSS, you choose which properties you want to affect in the rule.
+                     * Property value
+To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many color values in addition to red.)
+                        * How do you reference a file in the same directory as your HTML file?
+To link to a target file in the same directory as the invoking HTML file, just use the filename, e.g. my-image.jpg.
+                        * How do you reference a file in a directory below your HTML file?
+To reference a file in a subdirectory, write the directory name in front of the path, plus a forward slash, e.g. subdirectory/my-image.jpg.
+                        * How do you reference a file in the directory above your HTML file?
+To link to a target file in the directory above the invoking HTML file, write two dots. So for example, if index.html was inside a subfolder of test-site and my-image.jpg was inside test-site, you could reference my-image.jpg from index.html using ../my-image.jpg.
+HTML and CSS Basics
+                           * What is the difference between HTML and CSS?
+Efficiency and maintenance 'cost'. By keeping a separate CSS file it's possible to apply a single property/value to millions of classes/ID's/elements across thousands of separate HTML pages.
+If individual styling had to be entered on every <p> tag on the BBC News website for instance, thousands of man hours would be wasted every month on the tedious task, let alone when any styling changes need to be made.
+                           * For accessibility in HTML, what is the attribute used to describe an image (on screen readers or if it fails to load)?
+The “alt” attribute it’s used to describe an img.
+                           * What is the difference between CSS Grid and Flexbox?
+Grid is made for two-dimensional layout while Flexbox is for one. This means Flexbox can work on either row or columns at a time, but Grids can work on both. Flexbox, gives you more flexibility while working on either element (row or column). HTML markup and CSS will be easy to manage in this type of scenario
+                           * For a responsive website, should it be designed mobile-first or desktop-first?
+                           * Describe the components of the CSS Box Model.
+  
+                           * In CSS, what is a breakpoint?
+CSS breakpoints are points where the website content responds according to the device width, allowing you to show the best possible layout to the user. CSS breakpoints are also called media query breakpoints, as they are used with media query.
+                           * What is a div and how are they used?
+A div is simply a type of HTML Element that acts like a container to hold the content within. It is used to divide the HTML document into sections and can be used to apply CSS to very large or very specific sections of the HTML document.
+                           * What are the two main groups of CSS properties that control typography style?
+There are two main groups of CSS properties that control typography style: font and text. The font CSS property group dictates general font characteristics such as font-style and font-weight .
+                           * What is the “query string” in a URL and what does it do?
+Query String is a group of keywords that send request to the web server. These requests are used to pass information (parameters) from one page to another and you can access those information in receiving page. It containing in the HTTP requests for a specific URL.
+                           * What is the difference between “pixels” and “em”?
+Pixels are an absolute measure and ems are a relative measure.
+                              * Ems are measured relative to the parent div, or to the HTML element, or to the browser defaults of the properties aren't included in the HTML document/CSS.
+                              * Pixels are exactly what they sound like, a font size of 16px will display 16px high on all screens. The problem comes when different screens have different sizes and pixel densities.
+                              * How does inheritance work for CSS styles, i.e. how does an element get its “default” styles?
+CSS inheritance works on a property by property basis. When applied to an element in a document, a property with the value 'inherit' will use the same value as the parent element has for that property. The background colour of the div element is white, because the background-color property is set to white
+                              * What are two CSS attributes you can change to push an element around on the page?
+Margin and padding are the basic ones. But you could also use position (and additional properties) or even translate to name two others.
+                              * What are the three different ways to include a CSS stylesheet in your project or use CSS to style a particular element?
+                                 * Inline: Placed directly within the start tag of an HTML element as an 'attribute' and will be automatically applied.
+                                 * Internal: Placed within <style> tags within the same HTML document as the elements (usually in the <head> section) and will be automatically applied.
+                                 * External: Placed in a separate text files save as .css and included/applied via a specifically formatted link in the <head> section.
+                                 * What is the “default stylesheet” or “user agent stylesheet”?
+It's simply a set of CSS rules that are inbuilt into the browser and which give HTML elements some default styling.
+                                 * What is the purpose of a CSS reset file?
+To neutralise the default stylesheet and allow you to start completely from a blank page. This can be useful in avoiding different browsers causing your markup to display differently.
+Developer Tools
+                                    * How do you open developer tools in your browser?
+                                    * With the F12 key.
+                                    * Selecting and element on the page with right click and selectin “Inspect”
+                                    * On options.
+                                    * How do you select a specific element on your page with your browser’s developer tools?
+You can click on the top left of the Dev Tools (CTRL+ SHIFT + C)and select whatever you want or just right click the element and select “Inspect”
+                                    * How do you change CSS in real time on specific elements of a web page with your browser’s developer tools?
+You add whatever you want or edit whatever style is already applied on the STYLES console to the right with an element selected. Or you can just edit the HTML clicking the element on the code.
+                                    * What does a strikethrough in a CSS element mean in your browser’s developer tools?
+                                    * How do you check every inherited style for an element in your browser’s developer tools?
+They are on the right on Styles or Computed(this one is every single property applied to that element on alphabetical order)
+                                    * How do you edit HTML in real time in your browser’s developer tools?
+Just edit the code of the elements.
+                                    * How do you toggle responsive design mode in your browser’s developer tools?
+CTRL+SHIFT+M or Click on the top left.
+                                    * Are changes made in your browser’s developer tools permanent?
+No
+                                    * How do you open the console in your browser’s developer tools?
+ESC
+                                    * What is the best resource for learning about your browser’s developer tools?
+The browsers guide for developers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JavaScript 
+Fundamentals (part 1)
+                                       * Name the three ways to declare a variable?
+var, let and const, although var it’s not used anymore.
+                                       * Which of the three variable declarations should you avoid and why?
+We should avoid using var since its similar to let but harder to use and creates more confusing
+                                       * What rules should you follow when naming variables?
+Using camelCase it’s a good practice, so it’s naming the variables something that lets you know what they actually mean.
+                                       * What should you look out for when using the + operator with numbers and strings?
+You should beaware of concatenating, since adding strings and numbers is often tricky,it will simply treat the number as a string and literally place it one next to the other, for example.
+let a = 10, b =’50’
+a + b = 1050  
+                                       * How does the % operator work?
+It gives back the remainder (el resto) of the division between the numbers.
+                                       * Explain the difference between == and ===.
+== just check if the values are equal, === cheques if the values&type are equals.
+                                       * When would you receive a NaN result?
+When something it’s Not a Number.
+                                       * How do you increment and decrement a number?
+To increment a number you should store it a variable first and then just simple add ‘++’ or ‘--’ before or after the variable name.
+                                       * Explain the difference between prefixing and post-fixing increment/decrement operators.
+When you prefix, the value returned it’s the new value
+When you postfix, the value return it’s the old value
+Example:
+let a = 5;
+alert(a++) // this will update a to 6 but the alert message will be 5
+alert(++a) // this will update a to 6 but the alert message will be 6
+                                       * What is operator precedence and how is it handled in JS?
+Operator precedence is just basically the same as math, some operators have priority over others.
+                                       * How do you access developer tools and the console?
+Inspect and element or f12.
+                                       * How do you log information to the console?
+console.log()
+Fundamentals (part 2)
+                                          * What are the eight data types in JavaScript?
+Number, String, Boolean, NULL, Undefined, Symbols and Object
+                                          * Which data type is NOT primitive?
+Object
+                                          * What is the relationship between null and undefined?
+null === undefined // false
+null == undefined // true 
+null === null // true
+                                          * What is the difference between single, double, and backtick quotes for strings?
+Basically, single and double can replace each other but you have to be consistent with it, they are used to create string literals, overall, it's better to use backtick quotes since you avoid making mistakes like accidentally closing the string.
+                                          * What is the term for embedding variables/expressions in a string?
+String Interpolation
+                                          * Which type of quote lets you embed variables/expressions in a string?
+Backtick quotes
+                                          * How do you embed variables/expressions in a string?
+${variable/expression}
+                                          * How do you escape characters in a string?
+You use the backslash (\) before the character you want to escape.
+                                          * What are methods?
+Special actions that can be performed on objects, a JS method is a property containing a function definition.
+                                          * What is the difference between slice/substring/substr?
+The slice() method extracts parts of a string and returns the extracted parts in a new string.
+The substr() method extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters.
+The substring() method extracts parts of a string and returns the extracted parts in a new string.
+So, you can say that there's a difference between slice() and substr(), while substring() is basically a copy of slice().
+In summary:
+If you know the index(the position) on which you'll stop (but NOT include), use slice()
+If you know the length of characters to be extracted use substr().
+                                          * What are the three logical operators and what do they stand for?
+|| means OR
+&& means AND
+! means NOT
+                                          * What are the comparison operators?
+== means EQUAL (value)
+=== means STRICTLY EQUAL (value and type)
+!= means NOT EQUAL
+!== means NOT EQUAL VALUE OR TYPE
+>, >= greater/ greater than or equal to
+<. <= less/ less than or quea lto
+                                          * What are truthy and falsy values?
+A truthy is a value that translates to TRUE when evaluated in a Boolean context, all values are truthy unless they are defined as falsey (i.e except for false, 0, “”, null, undefined and NAN)
+                                          * What are the falsy values in JavaScript?
+false, 0, “”, null, undefined and NAN
+                                          * What are conditionals?
+The conditional statements in JavaScript are if, else, else if and switch-case statements. They are used for checking a specific condition and executing the code based on the specified condition.
+                                          * What is the syntax for an if/else conditional?
+if (condition) {
+        code
+}
+else if (condition) {
+        code
+}
+else if (condition) {
+        code
+}
+                                          * What is the syntax for a switch statement?
+switch (expression to evaluate in each case) {
+        case n:
+        code 
+        break;
+        case j:
+        code
+        break;
+        case f:
+        code
+        break;
+        default:
+        code
+}
+                                          * What is the syntax for a ternary operator?
+condition ? expressionIfTrue : expressionIfFalse
+                                          * What is nesting?
+Nesting occurs when you write something inside something else, for example I have an If condition and if that's true then i have another one, and so on and so on.
+Problem Solving
+                                             * What are the three stages in the problem solving process?
+The first step to solving a problem is understanding exactly what the problem is.
+The second step is to plan, it basically means to plan the solution, writing down the steps.
+The third and last stage is to divide the bigger problem into smaller problems.
+                                             * Why is it important to clearly understand the problem first?
+Because if you don't understand the problem you won’t know when you’ve successfully solved it and may waste a lot of time on a wrong solution.
+                                             * What can you do to help get a clearer understanding of the problem?
+Explaining the problem in plain english/spanish to someone else or rubber ducking.
+                                             * What are some of the things you should do in the planning stage of the problem solving process?
+Plan the solution, write down the different steps, asking yourself questions regarding the inputs and outputs of the program.
+                                             * What is an algorithm?
+is a computer procedure that is a lot like a recipe (called procedure) and tells your computer precisely what steps to take to solve a problem or reach a goal. The ingredients are called inputs, while the results are called the outputs.
+                                             * What is pseudo code?
+Pseudo code is basically an informal way of coding to help programmers develop the algorithms needed in their programs. An easier way to show the logic of the algorithm before actually implementing it to help you understand if it will work or not.
+                                             * What are the advantages of breaking a problem down and solving the smaller problems?
+It’s way easier this way because if you start talking about a big problem you’ll probably get stuck, but if you instead focus on smaller problems that you can actually solve, everything becomes clear, plus, you can get help of a small problem on google but not of a big problem.
+
+
+
+Understanding Errors
+
+Syntax Error:
+A syntax error occurs when the code you are trying to run is not written correctly, i.e., in accordance with the grammatical rules of JavaScript
+Reference Error:
+A Reference Error is thrown when one refers to a variable that is not declared and/or initialized within the current scope.
+Type Error:
+These errors are thrown for a few different reasons:
+                                                1. an operand or argument passed to a function is incompatible with the type expected by that operator or function;
+                                                2. or when attempting to modify a value that cannot be changed;
+                                                3. or when attempting to use a value in an inappropriate way.
+                                                * What is the key difference between an error and a warning?
+Errors will stop the execution of your program or whatever process you may be attempting to run and prevent further action. Warnings, on the other hand, are messages that provide you insight on potential problems that may not necessarily crash your program at runtime, or at all! While you should address these warnings if possible and as soon as possible, warnings are not as significant as errors and are more likely to be informational. Warnings are typically shown in yellow, while errors are typically shown in red.
+                                                * What is one method you can use to resolve an error?
+console.log()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DOM Manipulation
+                                                   * What is the DOM?
+At the most basic level, a website consists of an HTML document. The browser that you use to view the website is a program that interprets HTML and CSS and renders the style, content, and structure into the page that you see.
+In addition to parsing the style and structure of the HTML and CSS, the browser creates a representation of the document known as the Document Object Model. This model allows JavaScript to access the text content and elements of the website document as objects.
+The document object is a built-in object that has many properties and methods that we can use to access and modify websites
+                                                   * How do you target the nodes you want to work with?
+  
+                                                   * How do you create an element in the DOM?
+Example: const newDiv = document.createElement(‘div’);  
+                                                   * How do you add an element to the DOM?
+  
+                                                   * How do you remove an element from the DOM?
+  
+                                                   * How can you alter an element in the DOM?
+  
+                                                   * When adding text to a DOM element, should you use textContent or innerHTML? Why?
+It is recommended to use textContent instead, which will strip out HTML tags.
+                                                   * Where should you include your Javascript tag in your HTML file when working with DOM nodes?
+At the end, or just add a “defer” attribute.
+Example: <script defer src=”yoursource.js”></script>
+                                                   * How do “events” and “listeners” work?
+An event handler is a JavaScript function that runs when an event fires.An event listener attaches a responsive interface to an element, which allows that particular element to wait and “listen” for the given event to fire.
+                                                   * What are three ways to use events in your code?
+There are three ways to assign events to elements:
+                                                      * Inline event handlers
+                                                      * Event handler properties
+                                                      * Event listeners
+                                                      * Why are event listeners the preferred way to handle events?
+Because you keep your js and html separeted and you can add mutliple events to the same element.
+                                                      * What are the benefits of using named functions in your listeners?
+Cleaner and more readable code.
+                                                      * How do you attach listeners to groups of nodes?
+With a for each or for loop.
+                                                      * What is the difference between the return values of querySelector and querySelectorAll?
+One returns just one element and the other one a nodelist.
+                                                      * What does a “nodelist” contain?
+A NodeList is a collection of document nodes
+                                                      * Explain the difference between “capture” and “bubbling”.
+With bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements. With capturing, the event is first captured by the outermost element and propagated to the inner elements
+OBJECTS
+Objects are associative arrays with several special features.
+They store properties (key-value pairs), where:
+                                                         * Property keys must be strings or symbols (usually strings).
+                                                         * Values can be of any type.
+To access a property, we can use:
+                                                         * The dot notation: obj.property.
+                                                         * Square brackets notation obj["property"]. Square brackets allow to take the key from a variable, like obj[varWithKey].
+Additional operators:
+                                                         * To delete a property: delete obj.prop.
+                                                         * To check if a property with the given key exists: "key" in obj.
+                                                         * To iterate over an object: for (let key in obj) loop.
+What we’ve studied in this chapter is called a “plain object”, or just Object.
+There are many other kinds of objects in JavaScript:
+                                                         * Array to store ordered data collections,
+                                                         * Date to store the information about the date and time,
+                                                         * Error to store the information about an error.
+                                                         * …And so on.
+They have their special features that we’ll study later. Sometimes people say something like “Array type” or “Date type”, but formally they are not types of their own, but belong to a single “object” data type. And they extend it in various ways.
+Objects in JavaScript are very powerful. Here we’ve just scratched the surface of a topic that is really huge. We’ll be closely working with objects and learning more about them in further parts of the tutorial.
+
+
+Introduction to the Back End
+
+The backend usually consists of three parts: a server, an application, and a database. If you book a flight or buy concert tickets, you usually open a website and interact with the frontend. Once you’ve entered that information, the application stores it in a database that was created on a server. For sake of ease, just think about a database as a giant Excel spreadsheet on your computer, but your computer (server) is stored somewhere in Arizona.
+All of that information stays on the server so when you log back into the application to print your tickets, all of the information is still there in your account.
+
+
+Introduction to Frameworks
+
+
+                                                         * What are the four general tasks that developers have to handle?
+Create, Read, Update and Delete, otherwise known as CRUD.
+                                                         * What problems do frameworks solve?
+Frameworks exist to save you from having to re-invent the wheel and help alleviate some of the overhead when you’re building a new site. Typically frameworks provide libraries for accessing a database, managing sessions and cookies, creating templates to display your HTML and in general, promote the reuse of code.
+                                                         * Name some popular front-end and back-end frameworks.
+                                                            * Back End:
+        Ruby on Rails, Django, Angular
+                                                            * Front end:
+        AngularJS, React
+                                                            * User Interface:
+        Bootstrap, Materialize 
+                                                               * Describe the process of choosing a framework.
